@@ -6,11 +6,11 @@ import { listTodos } from './graphql/queries';
 import { createTodo as createTodoMutation, deleteTodo as deleteTodoMutation } from './graphql/mutations';
  
 const initialFormState = { name: '', description: '' }
-
+ 
 function App() {
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
-
+ 
   useEffect(() => {
     fetchNotes();
   }, []);
