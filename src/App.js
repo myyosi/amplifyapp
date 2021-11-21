@@ -4,7 +4,7 @@ import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listTodos } from './graphql/queries';
 import { createTodo as createTodoMutation, deleteTodo as deleteTodoMutation } from './graphql/mutations';
-
+ 
 const initialFormState = { name: '', description: '' }
 
 function App() {
