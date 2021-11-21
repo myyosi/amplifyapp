@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     fetchNotes();
   }, []);
-
+ 
   async function fetchNotes() {
     const apiData = await API.graphql({ query: listTodos });
     setNotes(apiData.data.listTodos.items);
